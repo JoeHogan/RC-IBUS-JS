@@ -80,5 +80,5 @@ const options = {
     defaultValue: 1500, // default = 1500. specified the start value for all 14 channels
     broadcastInterval: 7, // default = 7. min = 7. number of miliseconds used for returning the current buffer data value to listeners. the IBUS protocol expects data no faster than every 7 miliseconds, which is why thats the min.
     maxListeners: 10 // default = 10. max number of listeners
-}// default = 1000. min allowed value per channel
+}
 ```
