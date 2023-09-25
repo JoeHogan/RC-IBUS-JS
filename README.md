@@ -48,7 +48,7 @@ let buffer = instance.update([1000, 2000, 1500, 1400]);
 ### Update specific channel data
 
 ```
-let buffer = instance.update(2, 1900); //update channel index 2 to 1900; equivalent to instance.update([1000, 2000, 1900]);
+let buffer = instance.updateChannel(2, 1900); //update channel index 2 to 1900; equivalent to instance.update([1000, 2000, 1900]);
 ```
 
 ### Listen for buffer updates
