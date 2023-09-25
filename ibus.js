@@ -11,7 +11,7 @@ class IBus {
       this.buffer = new ArrayBuffer(32);
       this.view = new DataView(this.buffer);
       this.view.setUint8(0, 32); // header 1st byte = 0x20
-      this.view.setUint8(1, 64); // header 1st byte = 0x40
+      this.view.setUint8(1, 64); // header 2nd byte = 0x40
       this.initialChecksumValue = 65535 - 32 - 64; // 2 byte max value, minus the first two bytes
       this.listeners = [];
       this.running = null;
