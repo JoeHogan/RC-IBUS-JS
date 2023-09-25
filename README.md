@@ -39,15 +39,16 @@ note that the optional start callback listener and other listeners attached will
 
 
 ### Update channel data
+you can update the channel data, which updates the current value of the buffer. if you have called .start(), the updated buffer will be returned via the callback for each listener. But .update() also returns the updated buffer, in case you do not wish to use .start()
 
 ```
-instance.update([1000, 2000, 1500, 1400]);
+let buffer = instance.update([1000, 2000, 1500, 1400]);
 ```
 
 ### Update specific channel data
 
 ```
-instance.update(2, 1900); //update channel index 2 to 1900; equivalent to instance.update([1000, 2000, 1900]);
+let buffer = instance.update(2, 1900); //update channel index 2 to 1900; equivalent to instance.update([1000, 2000, 1900]);
 ```
 
 ### Listen for buffer updates
