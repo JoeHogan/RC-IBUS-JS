@@ -17,12 +17,6 @@ const IBus = require('ibus');
 
 let instance = new IBus(); // see options for new IBus(options);
 
-let onUpdate = (buffer) => {
-    console.log('data: ' + buffer);
-    // do something with encoded buffer data here (ie: send buffer data via UART to flight controller)
-};
-
-instance.start([1500, 1400, 1300, 1500], onUpdate); // array of up to 14 channel signals. provide optional callback for buffer data notifications
 ```
 
 ### Start encoding
